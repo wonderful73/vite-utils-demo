@@ -2,9 +2,11 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
+  "module": "./dist/index.es.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc -p tsconfig.build.json",
     "preview": "vite preview"
   },
   "devDependencies": {
