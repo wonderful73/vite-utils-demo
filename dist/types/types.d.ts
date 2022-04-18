@@ -1,1 +1,1 @@
-export declare type UrlParams<T> = T;
+export declare type Test = string;

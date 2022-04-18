@@ -1,1 +1,1 @@
-export type UrlParams<T> = T
+export type Test = string

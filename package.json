@@ -1,16 +1,30 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
-  "module": "./dist/index.es.js",
-  "types": "./dist/types/index.d.ts",
+  "name": "cbutils",
+  "author": "Bruce jsonp@foxmail.com",
+  "private": false,
+  "version": "0.0.1",
+  "module": "dist/index.es.js",
+  "main": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "description": "A typescript utils library base on vite",
+  "keywords": ["vite", "typescript", "utils"],
+  "files": ["dist/*"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangjiehai/vite-utils-demo.git"
+  },
+  "homepage": "https://github.com/huangjiehai/vite-utils-demo",
+  "bugs": {
+    "url": "https://github.com/huangjiehai/vite-utils-demo/issues",
+    "email": "jsonp@foxmail.com"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc -p tsconfig.build.json",
-    "preview": "vite preview"
+    "build": "vite build && tsc -p tsconfig.build.json"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
     "vite": "^2.9.2"
-  }
+  },
+  "license": "MIT"
 }

@@ -8,7 +8,7 @@ export default defineConfig({
       entry: './src/index.ts',
       fileName: (format) => `index.${format}.js`,
       formats: ['es', 'umd'],
-      name: 'vutils'
+      name: 'cbutils'
     }
   }
 
