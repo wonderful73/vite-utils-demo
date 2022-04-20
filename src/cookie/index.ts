@@ -21,21 +21,13 @@ export interface ICookieParams {
 }
 
 export function setCookie(
-  params: ICookieParams = {
-    key: '',
-    value: '',
-    time: 365,
-    options: {
-      domain: window.location.hostname,
-      path: '/'
-    }
-  }
+  params: ICookieParams
 ) {
   const {
     key,
     value,
-    time,
-    options
+    time = 365,
+    options = { domain: window.location.hostname, path: '/' }
   } = params
 
   let oDate = new Date()

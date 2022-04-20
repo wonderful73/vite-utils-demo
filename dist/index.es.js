@@ -8,20 +8,12 @@ function getCookie(key) {
   }
   return "";
 }
-function setCookie(params = {
-  key: "",
-  value: "",
-  time: 365,
-  options: {
-    domain: window.location.hostname,
-    path: "/"
-  }
-}) {
+function setCookie(params) {
   const {
     key,
     value,
-    time,
-    options
+    time = 365,
+    options = { domain: window.location.hostname, path: "/" }
   } = params;
   let oDate = new Date();
   oDate.setDate(oDate.getDate() + time);

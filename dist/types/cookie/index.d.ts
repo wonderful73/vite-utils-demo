@@ -8,5 +8,5 @@ export interface ICookieParams {
         path?: string;
     };
 }
-export declare function setCookie(params?: ICookieParams): void;
+export declare function setCookie(params: ICookieParams): void;
 export declare function removeCookie(key: string): void;
