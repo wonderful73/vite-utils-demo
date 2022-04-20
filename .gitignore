@@ -1,0 +1,13 @@
+node_modules
+package-lock.json
+yarn.lock
+.DS_Store
+.vscode
+.idea
+*.swp
+*.tgz
+pnpm-lock.yaml
+web-types.json
+~*
+.pnpm-debug.log
+.history
