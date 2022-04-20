@@ -7,8 +7,14 @@
   "main": "dist/index.umd.js",
   "types": "dist/types/index.d.ts",
   "description": "A typescript utils library base on vite",
-  "keywords": ["vite", "typescript", "utils"],
-  "files": ["dist/*"],
+  "keywords": [
+    "vite",
+    "typescript",
+    "utils"
+  ],
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huangjiehai/vite-utils-demo.git"
@@ -20,11 +26,13 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc -p tsconfig.build.json"
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "test": "vitest"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
-    "vite": "^2.9.2"
+    "vite": "^2.9.2",
+    "vitest": "^0.9.3"
   },
   "license": "MIT"
 }
