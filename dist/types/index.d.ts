@@ -1,2 +1,2 @@
-export * from './getUrlParams';
 export * from './cookies';
+export * from './getUrlParams';
