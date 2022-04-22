@@ -10,4 +10,4 @@ echo $1
 npm version $1
 
 # 发布
-npm publish
+npm publish ./dist --registry=https://registry.npmjs.org"
