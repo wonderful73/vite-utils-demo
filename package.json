@@ -2,7 +2,7 @@
   "name": "cbutils",
   "author": "Bruce jsonp@foxmail.com",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "module": "dist/index.es.js",
   "main": "dist/index.umd.js",
   "types": "dist/types/index.d.ts",
