@@ -2,7 +2,7 @@
   "name": "cbutils",
   "author": "Bruce jsonp@foxmail.com",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.0.7",
   "module": "dist/index.es.js",
   "main": "dist/index.umd.js",
   "types": "dist/types/index.d.ts",
@@ -27,7 +27,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json",
-    "test": "vitest"
+    "test": "vitest",
+    "pub:major": "sh publish.sh major",
+    "pub:minor": "sh publish.sh minor",
+    "pub:patch": "sh publish.sh patch"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
