@@ -5,6 +5,7 @@ import { isAppWebView, isIos, isAndroid } from '../ua'
 export const toString = (v: any) => Object.prototype.toString.call(v)
 export const isString = (val: unknown): val is string => typeof val === 'string'
 export const isObject = (val: any): val is object => toString(val) === '[object Object]'
+
 export function createUUID() {
   const s: Array<any> = [];
   const hexDigits = "0123456789abcdef";
@@ -18,6 +19,17 @@ export function createUUID() {
   s[8] = s[13] = s[18] = s[23] = "-";
 
   return s.join("");
+}
+
+export function getPostFix() {
+  let wlh = window.location.host.toString();
+  let postfix = '';
+  if (wlh.indexOf('-dev') !== -1) {
+    postfix = '-dev';
+  } else if (wlh.indexOf('-test') !== -1) {
+    postfix = '-test';
+  }
+  return postfix;
 }
 
 /**

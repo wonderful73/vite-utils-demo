@@ -63,6 +63,16 @@ function createUUID() {
   s[8] = s[13] = s[18] = s[23] = "-";
   return s.join("");
 }
+function getPostFix() {
+  let wlh = window.location.host.toString();
+  let postfix = "";
+  if (wlh.indexOf("-dev") !== -1) {
+    postfix = "-dev";
+  } else if (wlh.indexOf("-test") !== -1) {
+    postfix = "-test";
+  }
+  return postfix;
+}
 function compareVersion(target, source) {
   source = source || getUrlParams("clientVersion") || getCookie("clientVersion");
   if (!source || !target) {
@@ -161,4 +171,4 @@ function goToApp(cmd, param) {
     console.warn("\u975EAPP\u73AF\u5883\u6267\u884C\u6307\u4EE4");
   }
 }
-export { compareVersion, createUUID, getCookie, getMonitorParams, getUrlParams, goToApp, isAndroid, isAppWebView, isIos, isObject, isString, isWechatMiniApp, jsonToAppParams, removeCookie, setCookie, toString };
+export { compareVersion, createUUID, getCookie, getMonitorParams, getPostFix, getUrlParams, goToApp, isAndroid, isAppWebView, isIos, isObject, isString, isWechatMiniApp, jsonToAppParams, removeCookie, setCookie, toString };

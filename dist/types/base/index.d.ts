@@ -2,6 +2,7 @@ export declare const toString: (v: any) => string;
 export declare const isString: (val: unknown) => val is string;
 export declare const isObject: (val: any) => val is object;
 export declare function createUUID(): string;
+export declare function getPostFix(): string;
 /**
  *
  * @description 判断当前版本是否大于等于目标版本（version格式[1.0.0]）
